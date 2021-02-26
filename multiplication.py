@@ -1,15 +1,21 @@
 #!/usr/bin/python
 
 import random
+import PyQt5
 
 # Mnożenie do 500
 def mulitiplication():
      while True:
-          a = random.randint(1, 100)
-          b = random.randint(1, 100)
-          if a * b > 500:
+          a = random.randint(2, 100)
+          b = random.randint(2, 100)
+          if a * b > 300:
                continue
           else:
-               return f'{a} * {b} = {a * b}'
+               break
+     return f'{a} * {b} = ?'
 
+
+print('Rozwiąż zadanie')
+print(mulitiplication())
+input()
 
